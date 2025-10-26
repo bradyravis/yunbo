@@ -286,3 +286,7 @@ fhkb:hasGreatGrandParent a owl:ObjectProperty ;
     rdfs:range fhkb:Person ;
     rdfs:subPropertyOf fhkb:hasAncestor ;
     owl:propertyChainAxiom ( fhkb:hasParent fhkb:hasParent fhkb:hasParent ) .
+fhkb:hasGreatGrandfather a owl:ObjectProperty ;
+    rdfs:range fhkb:Man ;
+    rdfs:subPropertyOf fhkb:hasGreatGrandParent ;
+    owl:propertyChainAxiom ( fhkb:hasParent fhkb:hasGrandfather ) .
